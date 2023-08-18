@@ -1,0 +1,13 @@
+{
+	"extends": "tsconfig/nest.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"baseUrl": ".",
+		"paths": {
+			"@/config/*": ["src/config/*"],
+			"@/cloudinary/*": ["src/cloudinary/*"],
+			"@/upload/*": ["src/upload/*"]
+		}
+	},
+	"exclude": ["node_modules", "dist"]
+}

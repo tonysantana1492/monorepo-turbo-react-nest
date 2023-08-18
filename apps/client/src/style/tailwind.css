@@ -1,0 +1,26 @@
+@tailwind base;
+
+
+@tailwind components;
+
+.button {
+    @apply bg-blue-600 text-white py-2 px-5 rounded-xl cursor-pointer
+}
+@tailwind utilities;
+
+@keyframes horizontal {   
+
+    0% {
+        transform: translateX(-100%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    100% {
+        transform: translateX(300%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+}
+.animate-horizontal {
+    animation: horizontal 2s infinite;
+}
+
